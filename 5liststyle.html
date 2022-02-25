@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>List</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            /* list-style: square inside url("sqpurple.gif");*/
+            list-style-type: circle;
+            /*circle square upper-roman lower-alpha*/
+            list-style-position: inside;
+            /* inside outside */
+            list-style-image: url(/useimg/d.png);
+            list-style-type: none;
+        }
+    </style>
+    <ul>
+        <li>Unordered Lists</li>
+        <li>Unordered Lists</li>
+    </ul>
+    <ol>
+        <li>Ordered Lists</li>
+        <li>Ordered Lists</li>
+    </ol>
+
+
+    <!-- simple menu -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-menu {
+            background-color: #3498db;
+        }
+
+        .header-menu ul {
+            text-align: center;
+        }
+
+        .header-menu ul li {
+            display: inline-block;
+            margin-left: -4px;
+        }
+
+        .header-menu ul li:first-child a {
+            border-left: 2px solid white;
+        }
+
+        .header-menu ul li a {
+            color: white;
+            padding: 14px 54px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            border-right: 2px solid white;
+        }
+
+        .header-menu ul li:hover>a {
+            background-color: #2980b9;
+        }
+
+        /* dropdown */
+        .header-menu ul li {
+            position: relative;
+        }
+
+        .header-menu ul li ul {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 300px;
+            background-color: #3498db;
+            border-top: 2px solid white;
+            transition: .4s;
+        }
+
+        .header-menu ul li ul li {
+            display: block;
+            margin-left: 0;
+        }
+
+        .header-menu ul li ul li a {
+            display: block;
+            border: none;
+            border-bottom: 2px solid white;
+        }
+
+        .header-menu ul li:first-child a {
+            border-left: none;
+        }
+
+        /* hover */
+        .header-menu ul li ul {
+            opacity: 0;
+            visibility: hidden;
+            transform: scaleY(0);
+            transform-origin: top center;
+        }
+
+        .header-menu ul li:hover ul {
+            opacity: 1;
+            visibility: visible;
+            transform: scaleY(1);
+        }
+
+        .header-menu ul li ul li a:hover {}
+    </style>
+    <div class="header-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about us</a>
+                <ul>
+                    <li><a href="#">dropdown</a></li>
+                    <li><a href="#">dropdown</a></li>
+                    <li><a href="#">dropdown</a></li>
+                    <li><a href="#">dropdown</a></li>
+                </ul>
+            </li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">produck</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </div>
+
+    <!-- social menu -->
+    <style>
+        .social {
+            margin-top: 100px;
+        }
+
+        .social ul {
+            text-align: center;
+        }
+
+        .social ul li {
+            display: inline-block;
+            margin-left: -5px;
+        }
+
+        .social ul li a {
+            color: white;
+            background-color: #9b59b6;
+            font-size: 40px;
+            padding: 10px;
+            margin-left: 21px;
+            margin-right: 16px;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 50%;
+        }
+
+        .social ul li a:hover {}
+    </style>
+    <div class="social">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></i></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-python"></i></a></li>
+            <li><a href="#"><i class="fab fa-java"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
